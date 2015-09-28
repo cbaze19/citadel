@@ -11,10 +11,10 @@ post '/contact' do
 	@message = params[:message]
 	
 	Pony.mail({
-		:to => 'caleb@citadelmetalsupply.com',
+		:to => 'contact@citadelmetalsupply.com',
 		:from => 'contact@citadelmetalsupply.com',
-		:subject => 'Test',
-		:body => 'TEST BODY',
+		:subject => "Website Contact - #{@name}",
+		:body => "#{@message} \n\n #{@email}",
 		:via => :smtp,
 		:via_options => {
 			:address => 'smtp.gmail.com',
@@ -22,10 +22,10 @@ post '/contact' do
 			:enable_starttls_auto => true,
 			:user_name => 'contact@citadelmetalsupply.com',
 			:password => 'cms2015!!',
-			:authentication => :login,
+			:authentication => :plain,
 			:domain => "localhost.localdomain"
 		}
 	})
-	
-	erb :index
+
+	redirect '/'
 end
