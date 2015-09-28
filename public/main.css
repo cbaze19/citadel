@@ -19,16 +19,3 @@ body
 	width: 75%;
 	border: 3px solid black;
 }
-
-@media screen and (min-width: 40.5em)
-{
-	#wrapper
-	{
-		font-size: 1em;
-	}
-
-	#logo
-	{
-		width: 40%;
-	}
-}
