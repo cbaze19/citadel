@@ -24,6 +24,7 @@ h1 {
 #contact-box{
 	text-align: center;
 	margin: auto;
+	color: gray;
 }
 
 form input{
