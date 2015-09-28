@@ -20,7 +20,7 @@ body
 	border: 3px solid black;
 }
 
-@media screen and (min-width: 28.75em)
+@media screen and (min-width: 32em)
 {
 	#wrapper
 	{
