@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'Pony'
+require 'pony'
 
 get '/' do
 	erb :index
