@@ -20,7 +20,7 @@ body
 	border: 3px solid black;
 }
 
-@media screen and (min-width: 32em)
+@media screen and (min-width: 40em)
 {
 	#wrapper
 	{
@@ -30,18 +30,5 @@ body
 	#logo
 	{
 		width: 40%;
-	}
-}
-
-@media screen and (min-width: 40.5em)
-{
-	#wrapper
-	{
-		font-size: 1em;
-	}
-
-	#logo
-	{
-		width: 35%;
 	}
 }
