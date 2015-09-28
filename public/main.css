@@ -21,3 +21,27 @@ body
 }
 
 @media screen and (min-width: 28.75em)
+{
+	#wrapper
+	{
+		font-size: 1em;
+	}
+
+	#logo
+	{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 40.5em)
+{
+	#wrapper
+	{
+		font-size: 1em;
+	}
+
+	#logo
+	{
+		width: 35%;
+	}
+}
