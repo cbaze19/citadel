@@ -1,11 +1,9 @@
-body
-{
+body {
 	background-color: #0C0C0C;
 	margin: 0;
 }
 
-#wrapper
-{
+#wrapper {
 	color: gray;
 	width:100%;
 	margin: auto;
@@ -13,9 +11,14 @@ body
 	font-size: 1.5em;
 }
 
-#logo
-{
+#logo {
 	margin-top: 2em;
 	width: 75%;
 	border: 3px solid black;
+}
+
+@media screen and (min-width: 28.75em){
+  #logo {
+	width: 45%;
+  }
 }
