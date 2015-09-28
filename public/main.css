@@ -1,0 +1,17 @@
+body
+{
+	background-color: #0C0C0C;
+}
+
+#wrapper
+{
+	color: gray;
+	width:600px;
+	margin: auto;
+	text-align: center;
+}
+
+#logo
+{
+	border: 3px solid black;
+}
