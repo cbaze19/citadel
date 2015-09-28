@@ -1,17 +1,22 @@
 body
 {
 	background-color: #0C0C0C;
+	margin: 0;
 }
 
 #wrapper
 {
 	color: gray;
-	width:600px;
+	width:100%;
 	margin: auto;
 	text-align: center;
+	background-color: blue;
 }
 
 #logo
 {
+	width: 75%;
 	border: 3px solid black;
 }
+
+@media screen and (min-width: 28.75em)
