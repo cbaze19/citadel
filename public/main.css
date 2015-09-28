@@ -10,11 +10,12 @@ body
 	width:100%;
 	margin: auto;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 #logo
 {
+	margin-top: 2em;
 	width: 75%;
 	border: 3px solid black;
 }
