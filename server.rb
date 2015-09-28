@@ -26,4 +26,6 @@ post '/contact' do
 			:domain => "localhost.localdomain"
 		}
 	})
+	
+	erb :index
 end
