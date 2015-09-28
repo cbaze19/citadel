@@ -11,6 +11,10 @@ body {
 	font-size: .8em;
 }
 
+h1 {
+	color: white;
+}
+
 #logo {
 	margin-top: 1em;
 	width: 75%;
