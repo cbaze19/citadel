@@ -2,6 +2,8 @@ require 'sinatra'
 require 'pony'
 require 'sinatra/flash'
 
+enable :sessions
+
 get '/' do
 	erb :index
 end
@@ -27,6 +29,8 @@ post '/contact' do
 			:domain => "localhost.localdomain"
 		}
 	})
+	
+	flash[:confirmation] = "Thank you for your email.  We will get back to you as soon as possible!"
 
 	redirect '/'
 end
