@@ -12,6 +12,11 @@
 			<h1>Welcome to Citadel Metal Supply!</h1>
 			<h2>Our site is coming soon!</h2>
 			<h3>For any questions you have, please email <span style="color:white">contact@citadelmetalsupply.com</span> or fill out the form below for a prompt response!</h3>
+			<% if flash[:confirmation] %>
+				<div id='flash'>
+			          <div class='flash info'>I'm sorry, Dave. I'm afraid I can't do that.</div>
+				</div>
+			<% end %>
 			<div id='contact-div' class="group">
 			    <form action="/contact" method="post" class="well">
 			      <input type="text" name="name" class="span4" placeholder="Your Name" required>
