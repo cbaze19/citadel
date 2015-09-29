@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'pony'
+require 'sinatra/flash'
 
 get '/' do
 	erb :index
