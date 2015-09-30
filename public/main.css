@@ -2,6 +2,7 @@ body {
 	background-color: #0C0C0C;
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
+	-webkit-font-smoothing:antialiased !important;
 }
 
 #wrapper {
