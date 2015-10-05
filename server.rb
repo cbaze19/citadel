@@ -8,6 +8,10 @@ get '/' do
 	erb :index
 end
 
+get '/list' do
+	erb :list
+end
+
 post '/contact' do
 	@name = params[:name]
 	@email = params[:email]
