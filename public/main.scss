@@ -1,10 +1,12 @@
 $main-bg-color: #FBFBFB;
 $main-red-color: #8C2020;
 $main-text-color: #484848;
-$input-bg-color: #CCCCCC;
-$input-border-color: #797979;
+
+$input-bg-color: #E6E6E6;
+$input-border-color: #909090;
 $input-text-color: #565656;
-$red-button-text-color: #C7C6C6;
+
+$red-button-text-color: #FBFBFB;
 $red-button-border-color: #500E0E;
 
 body {
@@ -73,7 +75,7 @@ form textarea {
 
 button {
 	font-family: 'Noto Sans', sans-serif;
-	margin: .25em auto;
+	margin: .10em auto;
 	width: 95%;
 	height: 3em;
 	background-color: $main-red-color;
