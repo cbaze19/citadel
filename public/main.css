@@ -1,12 +1,12 @@
 body {
-	background-color: #0C0C0C;
+	background-color: #FBFBFB;
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	-webkit-font-smoothing:antialiased !important;
 }
 
 #wrapper {
-	color: gray;
+	color: #484848;
 	width:100%;
 	margin: auto;
 	text-align: center;
@@ -14,12 +14,16 @@ body {
 }
 
 h1 {
-	color: white;
+	color: #8C2020;
 	font-family: 'Cinzel', serif;
 }
 
 h3 {
 	padding: 0 2em;
+}
+
+h3 span {
+	color: #8C2020;
 }
 
 #logo {
@@ -41,9 +45,9 @@ form input {
 	width: 95%;
 	font-size: 1.2em;
 	padding: .2em;
-	background-color: #2F2F2F;
-    border: 1px solid #424242;
-    color: gray;
+	background-color: #CCCCCC;
+    border: 1px solid #797979;
+    color: #A2A2A2;
 }
 
 form textarea {
@@ -55,9 +59,9 @@ form textarea {
 	height: 12em;
 	font-size: 1.2em;
 	padding: .2em;
-	color: gray;
-	background-color: #2F2F2F;
-    border: 1px solid #424242;
+	color: #A2A2A2;
+	background-color: #CCCCCC;
+    border: 1px solid #797979;
 }
 
 button {
