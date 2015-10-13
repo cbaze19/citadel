@@ -47,7 +47,7 @@ form input {
 	padding: .2em;
 	background-color: #CCCCCC;
     border: 1px solid #797979;
-    color: #A2A2A2;
+    color: #565656;
 }
 
 form textarea {
@@ -59,7 +59,7 @@ form textarea {
 	height: 12em;
 	font-size: 1.2em;
 	padding: .2em;
-	color: #A2A2A2;
+	color: #565656;
 	background-color: #CCCCCC;
     border: 1px solid #797979;
 }
@@ -71,8 +71,9 @@ button {
 	width: 95%;
 	height: 3em;
 	background-color: #AFAFAF;
-    border: 1px solid #424242;
+    border: 1px solid #797979;
     font-size: 1.2em;
+    color: #A2A2A2;
 }
 
 @media screen and (min-width: 28.75em){
