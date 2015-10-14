@@ -29,6 +29,15 @@ h1 {
 	font-family: 'Cinzel', serif;
 }
 
+#intro {
+	text-align: left;
+	padding: 0 1em;
+}
+
+a {
+	color: $main-red-color;
+}
+
 h3 {
 	padding: 0 2em;
 
@@ -121,6 +130,7 @@ button:hover {
 	
 	#wrapper {
 		font-size: 1.3em;
+		max-width: 1200px;
 	}
 
 	form input {

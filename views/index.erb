@@ -5,14 +5,16 @@
       		<link href='https://fonts.googleapis.com/css?family=Cinzel:700' rel='stylesheet' type='text/css'>
       		<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="main.css">
-		<title>Citadel Metal Supply</title>
+		<title>Citadel Metal Supply, LLC</title>
 	</head>
 	<body>
 		<div id="wrapper">
 			<img name="citadel-logo" id="logo" src="http://i.imgur.com/jO0q0o4.png" alt="">
 			<h1>Welcome to Citadel Metal Supply!</h1>
-			<h2>Our site is coming soon!</h2>
-			<h3>For any questions you have, please email <span>contact@citadelmetalsupply.com</span> or fill out the form below for a prompt response!</h3>
+			<h3 id='about-us'>About Us</h3>
+			<p id='intro'>	We are the sole distributor in North Texas for Central Texas Metal Roofing Supply. We carry several varieties of standing seam, exposed fastener, and soffit panels for residential and commercial projects.  We offer trim and accessories required for complete installation of each panel system.  Whether your job is a simple awning or a complex architectural standing seam roof, we have the materials you will need for a professional quality installation.</p>
+			<h3>For a more in depth look at what we have offer, please click <a href="/info">here</a>.</h3>
+			<h3>For pricing information and any other questions, please email <span>contact@citadelmetalsupply.com</span> or fill out the form below for a prompt response!</h3>
 			<% if flash[:confirmation] %>
 				<script type="text/javascript">
 					alert("Thanks for your email! We will get back to you shortly!");
@@ -22,6 +24,7 @@
 			    <form action="/contact" method="post" class="well">
 			      <input type="text" name="name" class="span4" placeholder="Your Name" required>
 			      <input type="text" name="email" class="span4" placeholder="Your Email" required>
+			      <input type="text" name="phone" class="span4" placeholder="Your Phone" required>
 			      <textarea name="message" cols='30' rows="10" placeholder="Your Message" required></textarea>
 			      <button type="submit" class="btn" value="Send">Submit</button>
 			    </form>
