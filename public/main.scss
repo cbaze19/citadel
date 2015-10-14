@@ -10,7 +10,7 @@ $red-button-text-color: #FBFBFB;
 $red-button-border-color: #500E0E;
 
 body {
-	background-color: $main-bg-color;
+	background-color: #B1B1B1;
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	-webkit-font-smoothing:antialiased !important;
@@ -18,10 +18,17 @@ body {
 
 #wrapper {
 	color: $main-text-color;
+	background-color: $main-bg-color;
 	width:100%;
 	margin: auto;
 	text-align: center;
 	font-size: .8em;
+	padding-bottom: 1em;
+}
+
+#header-div {
+	border-bottom: 1px solid $input-border-color;
+	background-color: #2F2F2F;
 }
 
 h1 {
@@ -47,7 +54,6 @@ h3 {
 }
 
 #logo {
-	margin-top: 1em;
 	width: 75%;
 }
 
