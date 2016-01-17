@@ -1,4 +1,4 @@
-$main-bg-color: #FBFBFB;
+$main-bg-color: rgb(208, 208, 208);
 $main-red-color: #8C2020;
 $main-text-color: #484848;
 
@@ -10,7 +10,7 @@ $red-button-text-color: #FBFBFB;
 $red-button-border-color: #500E0E;
 
 body {
-	background-color: #2F2F2F;
+	background-color: rgb(183, 183, 183);
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	-webkit-font-smoothing:antialiased !important;
@@ -27,13 +27,16 @@ body {
 }
 
 #header-div {
-	border-bottom: 1px solid #2F2F2F;
-	background-color: #D0D0D0;
+
+	background-image: url('stripe.png');
+	height: 85px;
+	margin-top: 75px;
 }
 
 h1 {
 	color: $main-red-color;
 	font-family: 'Cinzel', serif;
+	margin-top: 75px;
 }
 
 #intro {
@@ -54,7 +57,9 @@ h3 {
 }
 
 #logo {
-	width: 75%;
+	width: 200px;
+	position: relative;
+	top: -55px;
 }
 
 #contact-div{
@@ -105,8 +110,16 @@ button:hover {
 
 @media screen and (min-width: 28.75em){
 
+	#header-div {
+		height: 110px;
+		background-size: 100% 110px;
+		background-repeat: no-repeat;
+		margin-top: 87px;
+	}
+
 	#logo {
-		width: 58%;
+		width: 230px;
+		top: -65px;
 	}
 
 	#wrapper {
@@ -130,13 +143,21 @@ button:hover {
 }
 
 @media screen and (min-width: 40.5em){
+
+	#header-div {
+		height: 140px;
+		background-size: 100% 130px;
+		background-repeat: no-repeat;
+		margin-top: 100px;
+	}
+
 	#logo {
-		width: 15%;
+		width: 300px;
+		top: -93px;
 	}
 	
 	#wrapper {
 		font-size: 1.3em;
-		max-width: 1200px;
 	}
 
 	form input {
