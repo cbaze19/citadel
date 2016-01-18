@@ -9,13 +9,13 @@ $input-text-color: #565656;
 $red-button-text-color: #FBFBFB;
 $red-button-border-color: #500E0E;
 
-
+/*------------ MOBILE ----------------------------------------------------*/
 body {
 	background-color: rgb(183, 183, 183);
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	-webkit-font-smoothing:antialiased !important;
-}
+} 
 
 #wrapper {
 	color: $main-text-color;
@@ -44,6 +44,10 @@ h1 {
 #intro {
 	text-align: left;
 	padding: 0 1em;
+}
+
+.hlink {
+	display: none;
 }
 
 a {
@@ -116,6 +120,9 @@ button:hover {
 	cursor:pointer;
 }
 
+
+
+/* ------------------- MID SIZE -----------------------------------*/
 @media screen and (min-width: 28.75em){
 
 	// #header-div {
@@ -150,6 +157,17 @@ button:hover {
 	}
 }
 
+
+@media screen and (min-width: 55em) {
+	.hlink {
+		display: inline-block;
+		color: #b1b1b1;
+		text-decoration: none;
+	}
+}
+
+
+/* -------------------------------------------- DESKTOP SIZE --------------*/
 @media screen and (min-width: 40.5em){
 
 	#header-div {
@@ -157,11 +175,19 @@ button:hover {
 		background-size: 100% 110px;
 		background-repeat: no-repeat;
 		margin-top: 75px;
+
+		a {
+			position: relative;
+			top: 40px;
+			margin-right: 20px;
+		}
 	}
 
 	#logo {
+		position: absolute;
 		width: 240px;
-		top: -75px;
+		left: 10px;
+		top: 10px;
 	}
 
 	.roof_image {
