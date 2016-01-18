@@ -30,14 +30,15 @@ body {
 #header-div {
 
 	background-image: url('stripe.png');
-	height: 85px;
-	margin-top: 75px;
+	background-size: 100% 50px;
+	height: 50px;
+	margin-top: 45px;
 }
 
 h1 {
 	color: $main-red-color;
 	font-family: 'Cinzel', serif;
-	margin-top: 75px;
+	margin-top: 55px;
 }
 
 #intro {
@@ -58,9 +59,9 @@ h3 {
 }
 
 #logo {
-	width: 200px;
+	width: 150px;
 	position: relative;
-	top: -55px;
+	top: -45px;
 }
 
 .roof_image {
@@ -117,17 +118,17 @@ button:hover {
 
 @media screen and (min-width: 28.75em){
 
-	#header-div {
-		height: 110px;
-		background-size: 100% 110px;
-		background-repeat: no-repeat;
-		margin-top: 87px;
-	}
+	// #header-div {
+	// 	height: 110px;
+	// 	background-size: 100% 110px;
+	// 	background-repeat: no-repeat;
+	// 	margin-top: 87px;
+	// }
 
-	#logo {
-		width: 230px;
-		top: -65px;
-	}
+	// #logo {
+	// 	width: 230px;
+	// 	top: -65px;
+	// }
 
 	#wrapper {
 		font-size: .9em;
@@ -152,17 +153,25 @@ button:hover {
 @media screen and (min-width: 40.5em){
 
 	#header-div {
-		height: 140px;
-		background-size: 100% 130px;
+		height: 110px;
+		background-size: 100% 110px;
 		background-repeat: no-repeat;
-		margin-top: 100px;
+		margin-top: 75px;
 	}
 
 	#logo {
-		width: 300px;
-		top: -93px;
+		width: 240px;
+		top: -75px;
+	}
+
+	.roof_image {
+		
 	}
 	
+	#about-div {
+		
+	}
+
 	#wrapper {
 		font-size: 1.3em;
 	}
