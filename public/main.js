@@ -18,10 +18,10 @@ function startGallery() {
 
 		$('.roof_image').fadeTo('slow', 0, function() {
 			$('.roof_image').attr('src', 'roof_' + cur + '.jpg');
-			$('.roof_image').fadeTo('slow', 1);
 		});
 		
+		$('.roof_image').fadeTo('slow', 1);
 
-	}, 5000);
+	}, 10000);
 
 }
