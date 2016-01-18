@@ -1,4 +1,21 @@
+var imgs = [];
+
 $(function() {
+
+	if (document.images) {
+
+		img1 = new Image();
+		img2 = new Image();
+		img3 = new Image();
+
+		img1.src = 'roof_1.jpg';
+		img2.src = 'roof_2.jpg';
+		img3.src = 'roof_3.jpg';
+
+		imgs.push(img1);
+		imgs.push(img2);
+		imgs.push(img3);
+	}
 
 	startGallery();
 
@@ -6,18 +23,18 @@ $(function() {
 
 function startGallery() {
 
-	var cur = 1;
+	var cur = 0;
 
 	setInterval(function() {
 
 		cur++;
 
-		if (cur == 4) {
-			cur = 1;
+		if (cur == 3) {
+			cur = 0;
 		}
 
 		$('.roof_image').fadeTo('slow', 0, function() {
-			$('.roof_image').attr('src', 'roof_' + cur + '.jpg');
+			$('.roof_image').attr('src', imgs[cur].src);
 		});
 		
 		$('.roof_image').fadeTo('slow', 1);
