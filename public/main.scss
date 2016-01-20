@@ -44,6 +44,10 @@ body {
 	cursor: pointer;
 }
 
+.hlink-d {
+	display: none;
+}
+
 h1 {
 	color: $main-red-color;
 	font-family: 'Cinzel', serif;
@@ -151,10 +155,9 @@ button:hover {
 	// 	margin-top: 87px;
 	// }
 
-	// #logo {
-	// 	width: 230px;
-	// 	top: -65px;
-	// }
+	#logo {
+		top: -215px;
+	}
 
 	#wrapper {
 		font-size: .9em;
@@ -185,7 +188,13 @@ button:hover {
 /* -------------------------------------------- DESKTOP SIZE --------------*/
 @media screen and (min-width: 55em){
 
-	.hlink {
+	#menu-img {
+		display: none;
+	}
+
+	.hlink-d {
+		position: relative;
+		top: -200px;
 		display: inline-block;
 		color: #b1b1b1;
 		text-decoration: none;

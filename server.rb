@@ -12,6 +12,10 @@ get '/info' do
 	erb :info
 end
 
+get '/contactUs' do
+	erb :contactUs
+end
+
 post '/toctmrs' do
 	@name = params[:name]
 	@email = params[:email]

@@ -21,23 +21,26 @@
 				<a id='l3' class='hlink' href="">Gallery</a>
 				<a id='l4' class='hlink' href="/contactUs">Contact Us</a>
 				
-				
 				<img name="citadel-logo" id="logo" src="http://i.imgur.com/jO0q0o4.png" alt="">
 				
 				<img id='menu-img' src="menu.png" alt="">
 			</div>
-			<h1>Welcome to Citadel Metal Supply</h1>
+			<h1>Contact Us</h1>
 
-			<img src="roof_1.jpg" name='roof_1' class='roof_image' alt="">
-			
-			<div id='about-div'>
-				<h3 id='about-us'>About Us</h3>
-				<p id='intro'>	Citadel Metal Supply specializes in metal roof installation and serves as a distributor of metal roofing supplies for Central Texas Metal Roofing Supply.
-
-				With over 30 years of experience in metal roofing, we are dedicated to providing high quality materials and professional installation services to our customers.
-
-				<!-- We carry several varieties of standing seam, exposed fastener, and soffit panels for residential and commercial projects.  We offer trim and accessories required for complete installation of each panel system.  Whether your job is a simple awning or a complex architectural standing seam roof, we have the materials and services you need for a professional quality installation. -->
-				</p>
+			<h3>For pricing information and any other questions, please email <span>contact@citadelmetalsupply.com</span> or fill out the form below for a prompt response!</h3>
+			<% if flash[:confirmation] %>
+				<script type="text/javascript">
+					alert("Thanks for your email! We will get back to you shortly!");
+				</script>
+			<% end %>
+			<div id='contact-div' class="group">
+			    <form action="/contact" method="post" class="well">
+			      <input type="text" name="name" class="span4" placeholder="Your Name" required>
+			      <input type="text" name="email" class="span4" placeholder="Your Email" required>
+			      <input type="text" name="phone" class="span4" placeholder="Your Phone" required>
+			      <textarea name="message" cols='30' rows="10" placeholder="Your Message" required></textarea>
+			      <button type="submit" class="btn" value="Send">Submit</button>
+			    </form>
 			</div>
 		</div>
 
