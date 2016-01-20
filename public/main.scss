@@ -28,17 +28,26 @@ body {
 }
 
 #header-div {
-
+	display: block;
 	background-image: url('stripe.png');
 	background-size: 100% 50px;
 	height: 50px;
 	margin-top: 45px;
 }
 
+#menu-img {
+	position: absolute;
+	width: 35px;
+	height: 24px;
+	right: 10px;
+	top: 58px;
+	cursor: pointer;
+}
+
 h1 {
 	color: $main-red-color;
 	font-family: 'Cinzel', serif;
-	margin-top: 55px;
+	margin-top: 70px;
 }
 
 #intro {
@@ -47,7 +56,17 @@ h1 {
 }
 
 .hlink {
-	display: none;
+	position: relative;
+	display: block;
+	top: 50px;
+	background-color: rgb(230,230,230);
+	text-decoration: none;
+	border-bottom: 1px solid #DADADA;
+	padding: 8px;
+	text-align: left;
+	font-family: 'Cinzel', serif;
+	font-size: 1.3em;
+	opacity: 0;
 }
 
 a {
@@ -65,7 +84,7 @@ h3 {
 #logo {
 	width: 150px;
 	position: relative;
-	top: -45px;
+	top: -200px;
 }
 
 .roof_image {
@@ -159,16 +178,18 @@ button:hover {
 
 
 @media screen and (min-width: 55em) {
+	
+}
+
+
+/* -------------------------------------------- DESKTOP SIZE --------------*/
+@media screen and (min-width: 55em){
+
 	.hlink {
 		display: inline-block;
 		color: #b1b1b1;
 		text-decoration: none;
 	}
-}
-
-
-/* -------------------------------------------- DESKTOP SIZE --------------*/
-@media screen and (min-width: 40.5em){
 
 	#header-div {
 		height: 110px;
