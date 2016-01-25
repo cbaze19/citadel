@@ -1,30 +1,14 @@
 <html>
 	<head>
-		<meta charset="UTF-8"/>
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  		<link href='https://fonts.googleapis.com/css?family=Cinzel:700' rel='stylesheet' type='text/css'>
-  		<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-  		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<%= erb :'templates/head_main' %>
 		<link rel="stylesheet" href="main.css">
 		<title>Citadel Metal Supply, LLC</title>
 	</head>
 	<body>
 		<div id="wrapper">
-			<div id='header-div'>
-				<a id='l1' class='hlink-d' href="/">About Us</a>
-				<a id='l2' class='hlink-d' href="">Services</a>
-				<a id='l3' class='hlink-d' href="">Gallery</a>
-				<a id='l4' class='hlink-d' href="/contactUs">Contact Us</a>
-				<a id='l1' class='hlink disableClick' href="/">About Us</a>
-				<a id='l2' class='hlink disableClick' href="">Services</a>
-				<a id='l3' class='hlink disableClick' href="">Gallery</a>
-				<a id='l4' class='hlink disableClick' href="/contactUs">Contact Us</a>
-				
-				<img name="citadel-logo" id="logo" src="http://i.imgur.com/jO0q0o4.png" alt="">
-				
-				<img id='menu-img' src="menu.png" alt="">
-			</div>
+			
+			<%= erb :'templates/header' %>
+
 			<h1>Contact Us</h1>
 
 			<h3>Joel Baze, Owner</h3>
@@ -32,11 +16,13 @@
 			<h3>(469) 993-8157</h3>
 
 			<h3>For pricing information and any other questions, please email <span>contact@citadelmetalsupply.com</span> or fill out the form below for a prompt response!</h3>
+
 			<% if flash[:confirmation] %>
 				<script type="text/javascript">
 					alert("Thanks for your email! We will get back to you shortly!");
 				</script>
 			<% end %>
+
 			<div id='contact-div' class="group">
 			    <form action="/contact" method="post" class="well">
 			      <input type="text" name="name" class="span4" placeholder="Your Name" required>
@@ -46,9 +32,10 @@
 			      <button type="submit" class="btn" value="Send">Submit</button>
 			    </form>
 			</div>
+
 		</div>
 
-		<script src='jquery.js'></script>
-		<script src='main.js'></script>
+		<%= erb :'templates/scripts' %>
+
 	</body>
 </html>
