@@ -12,6 +12,7 @@ body {
   color: #484848;
   background-color: #d0d0d0;
   width: 100%;
+  height: 100%;
   margin: auto;
   text-align: center;
   font-size: .8em;
@@ -115,6 +116,24 @@ button {
 
 button:hover {
   cursor: pointer; }
+
+#gal-image {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  margin: auto; }
+
+#gallery-div {
+  position: absolute;
+  text-align: center; }
+  #gallery-div div {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    cursor: pointer; }
+  #gallery-div #scroll-right {
+    right: 0px;
+    top: 0px; }
 
 /* ------------------- MID SIZE -----------------------------------*/
 @media screen and (min-width: 28.75em) {

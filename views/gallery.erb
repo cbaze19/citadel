@@ -7,10 +7,19 @@
 	<body>
 		<div id='wrapper'>
 			<%= erb :'templates/header' %>
-
-			<img src="roof_1.jpg" name='roof_1' class='roof_image' alt="Image Load Failed">
+			<h1>Gallery</h1>
+			<div id='gal-image'>
+				<div id='gallery-div'>
+					<div id='scroll-left'></div>
+					<img src="roof_1.jpg" name='roof_1' class='roof_image' alt="Image Load Failed">
+					<div id='scroll-right'></div>
+				</div>
+			</div>
+			
+			
 		</div>
 
 		<%= erb :'templates/scripts' %>
+		<script src='gallery.js'></script>
 	</body>
 </html>
