@@ -1,4 +1,4 @@
-$main-bg-color: rgb(208, 208, 208);
+$main-bg-color: #E6E6E6;
 $main-red-color: #8C2020;
 $main-text-color: #484848;
 
@@ -11,7 +11,7 @@ $red-button-border-color: #500E0E;
 
 /*------------ MOBILE ----------------------------------------------------*/
 body {
-	background-color: rgb(183, 183, 183);
+	background-color: $main-bg-color;
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	-webkit-font-smoothing:antialiased !important;
@@ -178,6 +178,12 @@ button:hover {
 	}
 }
 
+#joel-about
+{
+	margin-bottom: 30px;
+	text-align: left;
+	padding: 10px;
+}
 
 
 /* ------------------- MID SIZE -----------------------------------*/
@@ -280,5 +286,12 @@ button:hover {
 	button {
 		max-width: 600px;
     	height: 2em;
+	}
+
+	p
+	{
+		max-width: 60%;
+		margin: auto;
+		margin-top: 10px;
 	}
 }
