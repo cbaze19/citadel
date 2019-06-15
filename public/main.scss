@@ -15,7 +15,7 @@ body {
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	-webkit-font-smoothing:antialiased !important;
-} 
+}
 
 .disableClick {
 	pointer-events: none;
@@ -96,10 +96,14 @@ h3 {
 	top: -200px;
 }
 
+.img-div {
+	max-height: 500px;
+}
+
 .roof_image {
 	border: 1px solid $input-border-color;
-	width: 100%;
-	max-width: 650px;
+	max-width: 100%;
+	max-height: 500px;
 }
 
 #contact-div{
@@ -149,33 +153,33 @@ button:hover {
 }
 
 #gal-image {
-	width: 100%;
-	max-width: 650px;
+	width: 650px;
+	height: 500px;
 	text-align: center;
 	margin: auto;
 }
 
 #gallery-div {
-	
-	position: absolute;
-	text-align: center;
 
-	div {
-		position: absolute;
-		//background-color: rgba(0,0,0,.5);
-		width: 50px;
-		height: 100%;
+}
+
+.thumb-pics {
+	margin: auto;
+	margin-top: 50px;
+	height: 400px;
+
+	img {
 		cursor: pointer;
+		height: 100px;
+		border: 1px solid rgba(100, 100, 100, .5);
+		border-radius: 4px;
+		padding: 4px;
 	}
 
-	#scroll-left {
-		
+	img:hover {
+  	box-shadow: 0 0 2px 1px rgba(120, 140, 186, 0.5);
 	}
 
-	#scroll-right {
-		right: 0px;
-		top: 0px;
-	}
 }
 
 #joel-about
@@ -219,7 +223,7 @@ button:hover {
 
 
 @media screen and (min-width: 55em) {
-	
+
 }
 
 
@@ -263,11 +267,11 @@ button:hover {
 	}
 
 	.roof_image {
-		
+
 	}
-	
+
 	#about-div {
-		
+
 	}
 
 	h1 {
