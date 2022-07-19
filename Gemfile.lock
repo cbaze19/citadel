@@ -1,13 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    mail (2.7.1)
-      mini_mime (>= 0.1.1)
-    mini_mime (1.1.2)
     mustermann (1.1.2)
       ruby2_keywords (~> 0.0.1)
-    pony (1.13.1)
-      mail (>= 2.0)
     rack (2.2.4)
     rack-protection (2.2.1)
       rack
@@ -23,10 +18,8 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
-  x64-mingw32
 
 DEPENDENCIES
-  pony
   sinatra
   sinatra-flash
 
