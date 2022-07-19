@@ -2,7 +2,7 @@ require 'sinatra'
 # require 'pony'
 require 'sinatra/flash'
 
-enable :sessions
+enable :sessionsgi
 
 get '/' do
 	erb :index
@@ -22,6 +22,10 @@ end
 
 get '/contactUs' do
 	erb :contactUs
+end
+
+get '/collector' do
+	erb :collector
 end
 
 # post '/toctmrs' do

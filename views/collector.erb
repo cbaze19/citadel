@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<%= erb :'templates/head_main' %>
+		<link rel="stylesheet" href="collector.css">
+		<title>Collector Calculator</title>
+	</head>
+	<body>
+    <div id='inputDiv'>
+      <div>
+        <span>Scale: </span><input id='iScale' type='number' placeholder='Scale'></input>
+        <span>T Height: </span><input id='iTransitionHeight' type='number' placeholder='Transition Height'></input>
+
+      </div>
+      <div>
+        <span>C Width: </span><input id='iCWidth' type='number' placeholder='Width'></input>
+        <span>C Height: </span><input id='iCHeight' type='number' placeholder='Height'></input>
+
+        <span>C Depth: </span><input id='iCDepth' type='number' placeholder='Depth'></input>
+
+      </div>
+      <div>
+      <span>DS Width: </span><input id='iDSWidth' type='number' placeholder='DS Width'></input>
+
+      <span>DS Depth: </span><input id='iDSDepth' type='number' placeholder='DS Height'></input>
+
+      <span>DS Tab: </span><input id='iDSTab' type='number' placeholder='DS Tab'></input>
+
+      </div>
+      <div>
+        <button id='bCalc'>Calculate</button>
+      </div>
+    </div>
+    <div id='canvasDiv' font-family: 'Orbitron'>
+      <canvas id='theCanvas'></canvas>
+    </div>
+
+		<%= erb :'templates/scripts' %>
+
+	</body>
+</html>
