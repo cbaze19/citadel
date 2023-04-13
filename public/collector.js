@@ -21,13 +21,13 @@ $('#bCalc').click(function(){
 	clearCanvas();
 	// Collect values from html inputs and set to js variables
 	cScale = parseInt($('#iScale').val());
-	cWidth = parseInt($('#iCWidth').val());
-	cHeight = parseInt($('#iCHeight').val());
-	cDepth = parseInt($('#iCDepth').val());
-	dsWidth = parseInt($('#iDSWidth').val());
-	dsDepth = parseInt($('#iDSDepth').val());
-	transitionHeight = parseInt($('#iTransitionHeight').val());
-	dsTab = parseInt($('#iDSTab').val());
+	cWidth = parseFloat($('#iCWidth').val());
+	cHeight = parseFloat($('#iCHeight').val());
+	cDepth = parseFloat($('#iCDepth').val());
+	dsWidth = parseFloat($('#iDSWidth').val());
+	dsDepth = parseFloat($('#iDSDepth').val());
+	transitionHeight = parseFloat($('#iTransitionHeight').val());
+	dsTab = parseFloat($('#iDSTab').val());
 
 	calcTrueLength();
 	setPoints();
